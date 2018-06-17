@@ -9,12 +9,13 @@ html {
 }
  
 h1, 
-h2,
-p {
+h2 {
     margin: 0;
 }
 
-
+p {
+    margin: 0 0 0.75rem 0;
+}
 /* TODO: check to remove */
 /* main, header, nav, footer, section, article, div {
     box-sizing: border-box;
