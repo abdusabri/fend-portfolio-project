@@ -1,0 +1,59 @@
+/* common styles */
+body, 
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "ABeeZee", sans-serif;
+}
+ 
+h1, 
+h2,
+p {
+    margin: 0;
+}
+
+
+/* TODO: check to remove */
+/* main, header, nav, footer, section, article, div {
+    box-sizing: border-box;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* TODO: remove style references 
+    
+
+background-color: #efefef;
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+background-image: url(https://i1.wp.com/abdusabri.com/wp-content/uploads/2017/05/pexels-photo-196645-Large.jpeg?fit=1920%2C1280&ssl=1);
+
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: space-between;
+position: relative;
+
+position: fixed;
+top: 0px;
+width: 810px;
+
+em {
+    color: #0d007d;
+    font-weight: 700;
+}
+
+color: rgba(0, 0, 0, 0.55);
+background-color: rgba(169, 193, 214, 1);
+
+
+color: rgba(0, 0, 0, 0.85);
+
+*/
