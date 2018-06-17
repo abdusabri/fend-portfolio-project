@@ -10,11 +10,15 @@ html {
     width: 100%;
     height: 100%;
     font-family: "ABeeZee", sans-serif;
+    background-color: #f9f9f9;
 }
  
-h1, 
-h2 {
+h1 {
     margin: 0;
+}
+
+h2 {
+    margin: 0 0 0.5rem;
 }
 
 figure {
@@ -23,6 +27,7 @@ figure {
 
 p {
     margin: 0 0 0.75rem 0;
+    text-align: justify;
 }
 
 em {
@@ -30,26 +35,20 @@ em {
     font-weight: 500;
 }
 
-/* header */
-
-/* main content styles */
-/* .main {
-    padding: 0 2rem;
-} */
+/* header and nav */
 
 /* hero section */
 .hero {
     width: 100%;
     height: 500px;
-    margin-bottom: 1rem;
-    background-repeat: no-repeat;
-    background-position: top;
+    margin: 0 0 1rem;
+    background: #efefef url(../img/hero-1366.jpeg) no-repeat top;
     background-size: cover;
-    background-image: url(../img/hero-1366.jpeg);
+    border-bottom: rgba(0, 0, 0, 0.25) solid 1px;
 }
 
 .hero-text {
-    padding: 3rem 0 0 2rem;
+    padding: 3rem 0 0 3rem;
 }
 
 .hero-text-primary {
@@ -66,10 +65,43 @@ em {
 /* TODO: think of a better name */
 /* main section */
 .section-main {
-    padding: 0 2rem;
+    padding: 0 3rem;
+    margin: 0 0 0.5rem;
 }
 
-/* main section */
+.about {
+    margin: 0 0 1.5rem;
+}
+
+/* my work section
+the article tag that represents the my work section is a
+flex box, and that will be the main element used to achieve
+responsivenes 
+*/
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* work sample styles */
+.work-sample {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+    border: rgba(0, 0, 0, 0.25) solid 1px;
+    border-radius: 0.5rem;
+}
+
+.my-work div:nth-child(even) {
+    padding-right: 0.75rem;
+}
+
+.my-work div:nth-child(odd) {
+    padding-left: 0.75rem;
+}
 
 /* TODO: check to remove */
 /* main, header, nav, footer, section, article, div {
