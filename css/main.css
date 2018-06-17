@@ -122,14 +122,34 @@ create a gap in between
     color: rgba(0, 0, 0, 0.55);
 }
 
+footer {
+    background-color: #2b2b2b;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.svg-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+}
+
+.footer-text {
+    color: rgba(255,255,255,0.55);
+}
 /* TODO: check to remove */
 /* main, header, nav, footer, section, article, div {
     box-sizing: border-box;
+
+    #454545
+
 } */
 
 
 /* TODO: remove style references 
     
+
+2px solid rgba(0, 0, 0, 0.15)
+rgba(255,255,255,0.55);
 
 background-color: #efefef;
 background-repeat: no-repeat;
