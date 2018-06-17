@@ -40,7 +40,7 @@ em {
 /* hero section */
 .hero {
     width: 100%;
-    height: 500px;
+    height: 480px;
     margin: 0 0 1rem;
     background: #efefef url(../img/hero-1366.jpeg) no-repeat top;
     background-size: cover;
@@ -48,7 +48,7 @@ em {
 }
 
 .hero-text {
-    padding: 3rem 0 0 3rem;
+    padding: 3rem 0 0 7.5%;
 }
 
 .hero-text-primary {
@@ -62,10 +62,10 @@ em {
     font-size: 1.5rem;
 }
 
-/* TODO: think of a better name */
-/* main section */
-.section-main {
-    padding: 0 3rem;
+/* main content section */
+.main-content {
+    max-width: 1366px;
+    padding: 0 7.5%;
     margin: 0 0 0.5rem;
 }
 
@@ -73,7 +73,8 @@ em {
     margin: 0 0 1.5rem;
 }
 
-/* my work section
+/* my work section */
+/*
 the article tag that represents the my work section is a
 flex box, and that will be the main element used to achieve
 responsivenes 
@@ -86,21 +87,39 @@ responsivenes
 /* work sample styles */
 .work-sample {
     width: 50%;
+    margin: 0.5rem 0;
 }
 
 img {
     width: 100%;
-    max-height: 300px;
+    max-height: 320px;
     border: rgba(0, 0, 0, 0.25) solid 1px;
     border-radius: 0.5rem;
 }
 
-.my-work div:nth-child(even) {
+/* 
+add padding to the left and right of projects to 
+create a gap in between
+*/
+.my-work div:nth-of-type(even) {
+    padding-left: 0.75rem;
+}
+
+.my-work div:nth-of-type(odd) {
     padding-right: 0.75rem;
 }
 
-.my-work div:nth-child(odd) {
-    padding-left: 0.75rem;
+.project-title {
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.project-title a {
+    color: inherit;
+}
+
+.project-title a:hover {
+    color: rgba(0, 0, 0, 0.55);
 }
 
 /* TODO: check to remove */
