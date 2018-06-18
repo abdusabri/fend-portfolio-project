@@ -88,7 +88,7 @@ the header is fixed at the top of the page
     color: rgba(13, 0, 125, 0.65);
 }
 
-/* used to create an offset when linking to "about me" and "my work" sections, 
+/* used to create an offset when linking to "about" and "my work" sections, 
 to ajust for the fixed header */
 .anchor {
     display: block;
