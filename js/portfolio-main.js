@@ -36,16 +36,23 @@ $(function () {
                     $('html, body').animate({
                         scrollTop: target.offset().top
                     }, 600, function () {
+                        //i've commented this code to solve an issue with undesirable borders around
+                        //some elements, apparently because of default focus styles. Although the code
+                        //originally indicated that changing the focus of the target element is a must
+                        //it works without issues, and i've tested it across multiple browsers, while
+                        //effectively eliminating the border issues. So i guess with a more recent version
+                        //of jquery changing the focus of the target element is not necessary
+
                         // Callback after animation
                         // Must change focus!
-                        var $target = $(target);
-                        $target.focus();
-                        if ($target.is(":focus")) { // Checking if the target was focused
-                            return false;
-                        } else {
-                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                            $target.focus(); // Set focus again
-                        };
+                        //var $target = $(target);
+                        //$target.focus();
+                        //if ($target.is(":focus")) { // Checking if the target was focused
+                        //    return false;
+                        //} else {
+                        //    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                        //    $target.focus(); // Set focus again
+                        //};
                     });
                 }
             }
