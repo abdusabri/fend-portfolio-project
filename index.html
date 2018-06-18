@@ -6,10 +6,13 @@
     <title>Abdulrahman Assabri's Portfolio</title>
     <link rel="icon" type="image/png" href="img/logo-favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css links -->
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!-- svg icons -->
     <svg style="display:none;">
-        <!-- icons here -->
         <!-- icons form font awesome and converted to svg using iconmoon -->
         <symbol id="linkedin-squared" viewBox="0 0 32 32">
             <path d="M4.224 25.248h4.128v-12.384h-4.128v12.384zM8.64 9.024q-0.032-0.928-0.672-1.536t-1.632-0.608-1.696 0.608-0.672 1.536q0 0.928 0.64 1.536t1.664 0.608v0q1.056 0 1.696-0.608t0.672-1.536zM19.072 25.248h4.128v-7.104q0-2.752-1.312-4.16t-3.424-1.408q-2.432 0-3.744 2.080h0.032v-1.792h-4.128q0.064 1.184 0 12.384h4.128v-6.944q0-0.672 0.128-0.992 0.256-0.608 0.8-1.056t1.312-0.448q2.080 0 2.080 2.816v6.624zM27.424 7.424v17.152q0 2.112-1.504 3.616t-3.648 1.536h-17.12q-2.144 0-3.648-1.536t-1.504-3.616v-17.152q0-2.112 1.504-3.616t3.648-1.536h17.12q2.144 0 3.648 1.536t1.504 3.616z" fill="#fff"></path>
@@ -18,19 +21,24 @@
             <path d="M9.28 21.44q0.064-0.128-0.064-0.256-0.16-0.128-0.256-0.032-0.064 0.128 0.064 0.224 0.16 0.128 0.256 0.064zM8.768 20.704q-0.096-0.128-0.224-0.096-0.096 0.096 0 0.224 0.128 0.16 0.224 0.096t0-0.224zM8.032 19.968q0.032-0.064-0.096-0.128-0.128-0.032-0.128 0.032-0.064 0.096 0.064 0.16 0.16 0.032 0.16-0.064zM8.416 20.384q0.032 0 0.032-0.064t-0.064-0.096q-0.128-0.128-0.192-0.064t0.032 0.192q0.096 0.096 0.192 0.032zM9.952 21.728q0.032-0.128-0.16-0.192-0.16-0.064-0.224 0.064t0.16 0.192q0.16 0.064 0.224-0.064zM10.688 21.792q0-0.16-0.192-0.16t-0.192 0.16 0.192 0.128 0.192-0.128zM11.392 21.664q-0.032-0.128-0.224-0.096t-0.16 0.16q0.032 0.16 0.192 0.096t0.192-0.16zM22.848 16q0-3.776-2.656-6.464t-6.464-2.688-6.464 2.688-2.688 6.464q0 2.976 1.76 5.376t4.48 3.296q0.32 0.064 0.48-0.096t0.16-0.352q0-0.928-0.032-1.696-0.096 0.032-0.256 0.064t-0.64 0.032-0.864-0.096-0.768-0.352-0.544-0.736q-0.416-1.056-1.024-1.312-0.032-0.032-0.064-0.064l-0.16-0.16t-0.096-0.16 0.064-0.128 0.352-0.064q0.096 0 0.256 0.032t0.544 0.288 0.576 0.64q0.288 0.48 0.672 0.736t0.768 0.256 0.704-0.064 0.512-0.16q0.128-0.864 0.608-1.248-0.896-0.096-1.536-0.32t-1.312-0.704-0.992-1.344-0.352-2.144q0-1.408 0.96-2.464-0.448-1.088 0.096-2.4 0.32-0.128 0.96 0.128t1.088 0.512l0.448 0.288q1.056-0.288 2.304-0.288t2.272 0.288q0.192-0.128 0.512-0.32t0.992-0.448 1.024-0.16q0.512 1.312 0.096 2.4 0.928 1.056 0.928 2.464 0 1.024-0.256 1.792t-0.64 1.248-0.928 0.8-1.12 0.448-1.216 0.224q0.608 0.544 0.608 1.696 0 0.704 0 1.6t-0.032 0.896q0 0.224 0.16 0.352t0.48 0.096q2.752-0.928 4.512-3.296t1.728-5.376zM27.424 7.424v17.152q0 2.112-1.504 3.616t-3.648 1.536h-17.12q-2.144 0-3.648-1.536t-1.504-3.616v-17.152q0-2.112 1.504-3.616t3.648-1.536h17.12q2.144 0 3.648 1.536t1.504 3.616z" fill="#fff"></path>
         </symbol>
     </svg>
+
+    <!-- cdn link to the minified version of jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/portfolio-main.js"></script>
 </head>
 <body>
     <!-- the header area of the website, which has the logo and navigation -->
     <header class="header">
-        <!-- svg logo -->
+        <!-- website logo -->
+        <a href="#main"><img src="img/logo-main-140.png" alt="" class="logo"></a>
         <nav class="nav">
-            <a href="" class="nav-item"></a>
-            <a href="" class="nav-item"></a>
+            <a href="#about" class="nav-item">About Me</a>
+            <a href="#my-work" class="nav-item">My Work</a>
         </nav>
     </header>
 
     <!-- the main content area of the website -->
-    <main>
+    <main id="main">
         <section class="hero">
             <header class="hero-text">
                 <h1 class="hero-text-primary">Abdulrahman Assabri</h1>
@@ -40,7 +48,8 @@
         <section class="main-content">
             <article class="about">
                 <header>
-                    <h2>About Me</h2>
+                    <span id="about" class="anchor"></span>
+                    <h2>About&nbsp;Me</h2>
                 </header>
                 <p>In a fast-paced and continuously-evolving tech/software domain; I believe that being able to quickly adapt, learn, and grow a diversified skill set, is important for continuous success and relevancy in the market. And that’s something I can say, has been demonstrated throughout my career.</p>
                 <p>I've 11 years of experience in software and integrated solutions, and privileged to have success in a variety of management/leadership, business, and technical roles.</p>
@@ -50,7 +59,8 @@
             </article>
             <article class="my-work">
                 <header>
-                    <h2>My Work</h2>
+                    <span id="my-work" class="anchor"></span>
+                    <h2>My&nbsp;Work</h2>
                     <p>Here are a few work samples I've created. The first of which is my existing website, and the rest are projects that I've created during my <em>Front-End Web Development Nanodegree</em>.</p>
                 </header>
                 <div class="work-sample">

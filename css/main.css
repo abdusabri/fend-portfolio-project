@@ -8,7 +8,6 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     font-family: "ABeeZee", sans-serif;
     background-color: #f9f9f9;
 }
@@ -36,6 +35,67 @@ em {
 }
 
 /* header and nav */
+/* 
+the header is fixed at the top of the page
+*/
+/* default header style, transparent when page is not scrolled */
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    background-color: transparent;
+}
+
+/* alternative header style, has a background color and used when page is scrolled */
+.header-alt {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    background-color: rgba(169, 193, 214, 0.85);
+}
+
+.logo {
+    background-color: transparent;
+    max-width: 140px;
+    border: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+.nav-item {
+    color: inherit;
+    margin: 0 0 0 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: rgba(13, 0, 125, 0.65);
+}
+
+/* used to create an offset when linking to "about me" and "my work" sections, 
+to ajust for the fixed header */
+.anchor {
+    display: block;
+    position: relative;
+    top: -5rem;
+    visibility: hidden;
+}
 
 /* hero section */
 .hero {
@@ -48,7 +108,7 @@ em {
 }
 
 .hero-text {
-    padding: 3rem 0 0 7.5%;
+    padding: 8rem 0 0 7.5%;
 }
 
 .hero-text-primary {
@@ -71,6 +131,10 @@ em {
 
 .about {
     margin: 0 0 1.5rem;
+}
+
+.about a {
+    color: inherit;
 }
 
 /* my work section */
@@ -122,6 +186,7 @@ create a gap in between
     color: rgba(0, 0, 0, 0.55);
 }
 
+/* footer styles */
 footer {
     background-color: #2b2b2b;
     padding: 0.5rem 0 0.5rem 1.5rem;
