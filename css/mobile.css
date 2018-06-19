@@ -46,7 +46,18 @@
 /* landscape */
 @media screen and (min-device-width: 361px) and (max-device-width: 640px) 
   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-    /* body {
-        background-color: red;
-    } */
+    /* hero section */
+    .hero {
+        height: 260px;
+        background: #efefef url(../img/hero-768.jpeg) no-repeat top;
+        background-size: cover;
+    }
+
+    .hero-text {
+        padding: 5rem 0 0 7.5%;
+    }
+    
+    .hero-text-primary {
+        font-size: 1.65rem;
+    }
 }
