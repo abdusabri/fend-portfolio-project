@@ -1,0 +1,53 @@
+/* portrait */
+@media screen and (min-device-width: 361px) and (max-device-width: 768px)
+    and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+        body {
+            font-size: 150%;
+        }
+
+        /* main content section */
+        .main-content {
+            padding: 0 10%;
+            margin: 0 0 0.75rem;
+        }
+
+        /* hero section */
+        .hero {
+            height: 780px;
+            background: #efefef url(../img/hero-768.jpeg) no-repeat top;
+            background-size: cover;
+        }
+
+        .hero-text {
+            padding: 11rem 0 0 10%;
+        }
+        
+        .hero-text-primary {
+            font-size: 3rem;
+        }
+        
+        .hero-text-secondary {
+            font-size: 2rem;
+        }
+
+        /* my work section */
+        /* work sample styles */
+        .work-sample {
+            width: 100%;
+        }
+
+        img {
+            max-height: 360px;
+        }
+
+        /* 
+        remove extra padding to the left and right of projects
+        */
+        .my-work div:nth-of-type(even) {
+            padding-left: unset;
+        }
+
+        .my-work div:nth-of-type(odd) {
+            padding-right: unset;
+        }
+}
