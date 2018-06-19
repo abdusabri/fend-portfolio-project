@@ -1,43 +1,52 @@
-@media screen and (max-width: 360px) {
-    /* hero section */
-    .hero {
-        height: 360px;
-        background: #efefef url(../img/hero-360.jpeg) no-repeat top;
-        background-size: cover;
-    }
+/* portrait */
+@media screen and (max-device-width: 360px) and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        /* hero section */
+        .hero {
+            height: 360px;
+            background: #efefef url(../img/hero-360.jpeg) no-repeat top;
+            background-size: cover;
+        }
 
-    .hero-text {
-        padding: 4.5rem 0 0 7.5%;
-    }
-    
-    .hero-text-primary {
-        font-size: 1.65rem;
-    }
+        .hero-text {
+            padding: 4.5rem 0 0 7.5%;
+        }
+        
+        .hero-text-primary {
+            font-size: 1.65rem;
+        }
 
-    /* about section */
-    /* 
-    avoid justifying the last paragraph to avoid
-    exessive stretching of "you can reach me at ...." 
-    */
-    .about p:last-of-type {
-        text-align: unset;
-    }
+        /* about section */
+        /* 
+        avoid justifying the last paragraph to avoid
+        exessive stretching of "you can reach me at ...." 
+        */
+        .about p:last-of-type {
+            text-align: unset;
+        }
 
-    /* my work section */
-    /* work sample styles */
-    .work-sample {
-        width: 100%;
-    }
+        /* my work section */
+        /* work sample styles */
+        .work-sample {
+            width: 100%;
+        }
 
-    /* 
-    remove extra padding to the left and right of projects
-    */
-    .my-work div:nth-of-type(even) {
-        padding-left: unset;
-    }
+        /* 
+        remove extra padding to the left and right of projects
+        */
+        .my-work div:nth-of-type(even) {
+            padding-left: unset;
+        }
 
-    .my-work div:nth-of-type(odd) {
-        padding-right: unset;
-    }
+        .my-work div:nth-of-type(odd) {
+            padding-right: unset;
+        }
+}
 
+/* landscape */
+@media screen and (min-device-width: 361px) and (max-device-width: 640px) 
+  and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    /* body {
+        background-color: red;
+    } */
 }
