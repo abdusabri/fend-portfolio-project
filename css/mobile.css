@@ -1,0 +1,7 @@
+@media screen and (max-width: 360px) {
+    .hero {
+        height: 360px;
+        background: #efefef url(../img/hero-360.jpeg) no-repeat top;
+        background-size: cover;
+    }
+}
