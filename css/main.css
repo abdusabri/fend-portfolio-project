@@ -46,7 +46,7 @@ the header is fixed at the top of the page
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0px;
+    top: 0;
     padding: 0.5rem 0 0.5rem 1.5rem;
     background-color: transparent;
 }
@@ -59,7 +59,7 @@ the header is fixed at the top of the page
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0px;
+    top: 0;
     padding: 0.5rem 0 0.5rem 1.5rem;
     background-color: rgba(169, 193, 214, 0.85);
 }
@@ -100,7 +100,7 @@ to ajust for the fixed header */
 /* hero section */
 .hero {
     width: 100%;
-    height: 480px;
+    height: 580px;
     margin: 0 0 1rem;
     background: #efefef url(../img/hero-1366.jpeg) no-repeat top;
     background-size: cover;
@@ -108,7 +108,7 @@ to ajust for the fixed header */
 }
 
 .hero-text {
-    padding: 8rem 0 0 7.5%;
+    padding: 8rem 0 0 2.5%;
 }
 
 .hero-text-primary {
@@ -124,8 +124,7 @@ to ajust for the fixed header */
 
 /* main content section */
 .main-content {
-    max-width: 1366px;
-    padding: 0 7.5%;
+    padding: 0 2.5%;
     margin: 0 0 0.5rem;
 }
 
@@ -150,27 +149,29 @@ responsivenes
 
 /* work sample styles */
 .work-sample {
-    width: 50%;
+    width: 25%;
     margin: 0.5rem 0;
 }
 
 img {
     width: 100%;
-    max-height: 320px;
+    max-height: 150px;
     border: rgba(0, 0, 0, 0.25) solid 1px;
     border-radius: 0.5rem;
 }
 
 /* 
-add padding to the left and right of projects to 
-create a gap in between
+add padding to the right of projects to 
+create a gap in between, except for the last one
+TODO: could find a more efficent way to avoid setting a value
+and then removing it on a second step
 */
-.my-work div:nth-of-type(even) {
-    padding-left: 0.75rem;
+.my-work div {
+    padding-right: 1.75rem;
 }
 
-.my-work div:nth-of-type(odd) {
-    padding-right: 0.75rem;
+.my-work div:last-of-type {
+    padding-right: 0;
 }
 
 .project-title {
@@ -204,6 +205,42 @@ footer a {
 
 .footer-text {
     color: rgba(255,255,255,0.55);
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-text {
+        padding: 8rem 0 0 7.5%;
+    }
+
+    .main-content {
+        padding: 0 7.5%;
+        margin: 0 0 0.5rem;
+    }
+
+    /* work sample styles */
+    .work-sample {
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+    
+    img {
+        max-height: 320px;
+    }
+    
+    .my-work div {
+        padding-right: unset;
+    }
+    /* 
+    add padding to the left and right of projects to 
+    create a gap in between
+    */
+    .my-work div:nth-of-type(even) {
+        padding-left: 0.75rem;
+    }
+
+    .my-work div:nth-of-type(odd) {
+        padding-right: 0.75rem;
+    }
 }
 /* TODO: check to remove */
 /* main, header, nav, footer, section, article, div {
