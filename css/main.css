@@ -11,7 +11,7 @@ html {
     font-family: "ABeeZee", sans-serif;
     background-color: #f9f9f9;
 }
- 
+
 h1 {
     margin: 0;
 }
@@ -124,8 +124,9 @@ to ajust for the fixed header */
 
 /* main content section */
 .main-content {
+    max-width: 1366px;
     padding: 0 2.5%;
-    margin: 0 0 0.5rem;
+    margin: 0 auto 0.5rem auto;
 }
 
 .about {
