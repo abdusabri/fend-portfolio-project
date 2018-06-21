@@ -107,6 +107,15 @@ to ajust for the fixed header */
     border-bottom: rgba(0, 0, 0, 0.25) solid 1px;
 }
 
+/* use larger photo for the hero section if screen size is larger than 1366 */
+@media screen and (min-width: 1367px) {
+    .hero {
+        height: 620px;
+        background: #efefef url(../img/hero-1920.jpeg) no-repeat top;
+        background-size: cover;
+    }
+}
+
 .hero-text {
     padding: 8rem 0 0 2.5%;
 }
@@ -150,29 +159,30 @@ responsivenes
 
 /* work sample styles */
 .work-sample {
-    width: 25%;
+    width: calc((100% - 3rem)/4);
     margin: 0.5rem 0;
 }
 
 img {
     width: 100%;
-    max-height: 150px;
+    /* max-height: 210px; */
     border: rgba(0, 0, 0, 0.25) solid 1px;
     border-radius: 0.5rem;
 }
 
 /* 
-add padding to the right of projects to 
-create a gap in between, except for the last one
-TODO: could find a more efficent way to avoid setting a value
-and then removing it on a second step
+add margins to the projects to create gaps in between
 */
 .my-work div {
-    padding-right: 1.75rem;
+    margin: 0.5rem;
+}
+
+.my-work div:first-of-type {
+    margin-left: 0;
 }
 
 .my-work div:last-of-type {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .project-title {
@@ -223,9 +233,9 @@ footer a {
         width: 50%;
         margin: 0.5rem 0;
     }
-    
-    img {
-        max-height: 320px;
+
+    .my-work div {
+        margin: unset;
     }
     
     .my-work div {
@@ -242,6 +252,49 @@ footer a {
     .my-work div:nth-of-type(odd) {
         padding-right: 0.75rem;
     }
+}
+
+@media screen and (max-width: 428px) {
+        /* hero section */
+        .hero {
+            height: 360px;
+            background: #efefef url(../img/hero-768.jpeg) no-repeat top;
+            background-size: cover;
+        }
+
+        .hero-text {
+            padding: 4.5rem 0 0 7.5%;
+        }
+        
+        .hero-text-primary {
+            font-size: 1.65rem;
+        }
+
+        /* about section */
+        /* 
+        avoid justifying the last paragraph to avoid
+        exessive stretching of "you can reach me at ...." 
+        */
+        .about p:last-of-type {
+            text-align: unset;
+        }
+
+        /* my work section */
+        /* work sample styles */
+        .work-sample {
+            width: 100%;
+        }
+
+        /* 
+        remove extra padding to the left and right of projects
+        */
+        .my-work div:nth-of-type(even) {
+            padding-left: unset;
+        }
+
+        .my-work div:nth-of-type(odd) {
+            padding-right: unset;
+        }
 }
 /* TODO: check to remove */
 /* main, header, nav, footer, section, article, div {
