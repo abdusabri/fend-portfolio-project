@@ -39,11 +39,11 @@
         /* 
         remove extra padding to the left and right of projects
         */
-        .my-work div:nth-of-type(even) {
+        .work-sample:nth-of-type(even) {
             padding-left: unset;
         }
 
-        .my-work div:nth-of-type(odd) {
+        .work-sample:nth-of-type(odd) {
             padding-right: unset;
         }
 }
@@ -54,7 +54,7 @@
     /* work sample styles */
     .work-sample {
         width: 50%;
-        margin: 0.5rem 0;
+        margin: unset;
     }
     /* TODO: check after desktop */
     img {
@@ -68,11 +68,11 @@
     add padding to the left and right of projects to 
     create a gap in between
     */
-    .my-work div:nth-of-type(even) {
+    .work-sample:nth-of-type(even) {
         padding-left: 0.75rem;
     }
 
-    .my-work div:nth-of-type(odd) {
+    .work-sample:nth-of-type(odd) {
         padding-right: 0.75rem;
     }
 }
