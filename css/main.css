@@ -160,28 +160,24 @@ responsivenes
 /* work sample styles */
 .work-sample {
     width: calc((100% - 3rem)/4);
-    margin: 0.5rem 0;
+    margin: 0.5rem;
 }
 
 img {
     width: 100%;
-    /* max-height: 210px; */
     border: rgba(0, 0, 0, 0.25) solid 1px;
     border-radius: 0.5rem;
 }
 
 /* 
-add margins to the projects to create gaps in between
+Remove margins from the left and right of the first and
+last samples to align with edges of the main content area
 */
-.my-work div {
-    margin: 0.5rem;
-}
-
-.my-work div:first-of-type {
+.work-sample:first-of-type {
     margin-left: 0;
 }
 
-.my-work div:last-of-type {
+.work-sample:last-of-type {
     margin-right: 0;
 }
 
