@@ -34,11 +34,11 @@
         /* 
         remove extra padding to the left and right of projects
         */
-        .my-work div:nth-of-type(even) {
+        .work-sample:nth-of-type(even) {
             padding-left: unset;
         }
 
-        .my-work div:nth-of-type(odd) {
+        .work-sample:nth-of-type(odd) {
             padding-right: unset;
         }
 }
