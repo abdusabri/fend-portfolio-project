@@ -227,25 +227,19 @@ footer a {
     /* work sample styles */
     .work-sample {
         width: 50%;
-        margin: 0.5rem 0;
+        margin: unset;
+        padding: unset;
     }
 
-    .my-work div {
-        margin: unset;
-    }
-    
-    .my-work div {
-        padding-right: unset;
-    }
     /* 
     add padding to the left and right of projects to 
     create a gap in between
     */
-    .my-work div:nth-of-type(even) {
+    .work-sample:nth-of-type(even) {
         padding-left: 0.75rem;
     }
 
-    .my-work div:nth-of-type(odd) {
+    .work-sample:nth-of-type(odd) {
         padding-right: 0.75rem;
     }
 }
@@ -284,11 +278,11 @@ footer a {
         /* 
         remove extra padding to the left and right of projects
         */
-        .my-work div:nth-of-type(even) {
+        .work-sample:nth-of-type(even) {
             padding-left: unset;
         }
 
-        .my-work div:nth-of-type(odd) {
+        .work-sample:nth-of-type(odd) {
             padding-right: unset;
         }
 }
