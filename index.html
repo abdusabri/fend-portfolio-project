@@ -30,17 +30,17 @@
 </head>
 <body>
     <!-- the header area of the website, which has the logo and navigation -->
-    <header class="header">
+    <header class="header" role="banner">
         <!-- website logo -->
         <a href="#main"><img src="img/logo-main-140.png" alt="" class="logo"></a>
-        <nav class="nav">
+        <nav class="nav" role="navigation">
             <a href="#about" class="nav-item">About</a>
             <a href="#my-work" class="nav-item">My&nbsp;Work</a>
         </nav>
     </header>
 
     <!-- the main content area of the website -->
-    <main id="main">
+    <main id="main" role="main">
         <section class="hero">
             <header class="hero-text">
                 <h1 class="hero-text-primary">Abdulrahman Assabri</h1>
@@ -48,7 +48,7 @@
             </header>
         </section>
         <section class="main-content">
-            <article class="about">
+            <article class="about" role="article">
                 <header>
                     <span id="about" class="anchor"></span>
                     <h2>About</h2>
@@ -59,7 +59,7 @@
                 <p>I started my career back in 2007 as a software developer, promoted multiple times until i became a team lead. Then switched to business and management roles. Now i want to brush up my skills and get back to being a full-time developer again!</p>
                 <p>You can reach me at <a href="mailto:abdusabri@outlook.com">abdusabri@outlook.com</a></p>
             </article>
-            <article class="my-work">
+            <article class="my-work" role="article">
                 <header>
                     <span id="my-work" class="anchor"></span>
                     <h2>My&nbsp;Work</h2>
@@ -72,7 +72,7 @@
                             <source media="(min-device-width: 361px) and (max-device-width: 768px)" srcset="img/my-website-540.png">
                             <!-- general responsive -->
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/my-website-540.png">
-                            <img src="img/my-website-360.png" alt="">
+                            <img src="img/my-website-360.png" alt="Personal website showing the header, a hero section, and some text as welcome notes">
                         </picture>
                         <figcaption class="project-title"><a href="https://abdusabri.com">My Existing Website</a></figcaption>
                     </figure>
@@ -85,7 +85,7 @@
                             <source media="(min-device-width: 361px) and (max-device-width: 768px)" srcset="img/matching-wide-540.png">
                             <!-- general responsive -->
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/matching-wide-540.png">
-                            <img src="img/matching-wide-360.png" alt="">
+                            <img src="img/matching-wide-360.png" alt="A memory matching game with 4 columns and 4 rows">
                         </picture>
                         <figcaption class="project-title"><a href="#proj-memory">The Memory Game</a></figcaption>
                     </figure>
@@ -98,7 +98,7 @@
                             <source media="(min-device-width: 361px) and (max-device-width: 768px)" srcset="img/restaurant-reviews-540.png">
                             <!-- general responsive -->
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/restaurant-reviews-540.png">
-                            <img src="img/restaurant-reviews-360.png" alt="">
+                            <img src="img/restaurant-reviews-360.png" alt="Map with locations of restaurants highlighted, and a side panel with reviews">
                         </picture>
                         <figcaption class="project-title"><a href="#proj-restaurant">Restaurant Reviews App</a></figcaption>
                     </figure>
@@ -111,7 +111,7 @@
                             <source media="(min-device-width: 361px) and (max-device-width: 768px)" srcset="img/neighborhood-map-540.png">
                             <!-- general responsive -->
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/neighborhood-map-540.png">
-                            <img src="img/neighborhood-map-360.png" alt="">
+                            <img src="img/neighborhood-map-360.png" alt="Map with highlighted locations, and a side panel with search and filter capabilities">
                         </picture>
                         <figcaption class="project-title"><a href="#proj-neighborhood">Neighborhood Map</a></figcaption>
                     </figure>
@@ -122,14 +122,14 @@
     </main>
     
     <!-- the footer area of the website -->
-    <footer>
+    <footer role="contentinfo">
         <p class="footer-text">Abdulrahman Assabri - 2018</p>
-        <a href="https://linkedin.com/in/abdulrahman-assabri">
+        <a href="https://linkedin.com/in/abdulrahman-assabri" title="View Abdulrahman's profile on LinkedIn">
             <svg class="svg-icon">
                 <use xlink:href="#linkedin-squared"></use>
             </svg>
         </a>
-        <a href="https://github.com/abdusabri">
+        <a href="https://github.com/abdusabri" title="View Abdulrahman's profile on Github">
             <svg class="svg-icon">
                 <use xlink:href="#github-squared"></use>
             </svg>
