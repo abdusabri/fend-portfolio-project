@@ -35,17 +35,6 @@
         .work-sample {
             width: 100%;
         }
-        
-        /* 
-        remove extra padding to the left and right of projects
-        */
-        .work-sample:nth-of-type(even) {
-            padding-left: unset;
-        }
-
-        .work-sample:nth-of-type(odd) {
-            padding-right: unset;
-        }
 }
 
 /* Landscape */
@@ -53,26 +42,6 @@
   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     /* work sample styles */
     .work-sample {
-        width: 50%;
-        margin: unset;
-    }
-    /* TODO: check after desktop */
-    img {
-        width: 100%;
-        max-height: 320px;
-        border: rgba(0, 0, 0, 0.25) solid 1px;
-        border-radius: 0.5rem;
-    }
-
-    /* 
-    add padding to the left and right of projects to 
-    create a gap in between
-    */
-    .work-sample:nth-of-type(even) {
-        padding-left: 0.75rem;
-    }
-
-    .work-sample:nth-of-type(odd) {
-        padding-right: 0.75rem;
+        width: 48.75%;
     }
 }

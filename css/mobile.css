@@ -30,17 +30,6 @@
         .work-sample {
             width: 100%;
         }
-
-        /* 
-        remove extra padding to the left and right of projects
-        */
-        .work-sample:nth-of-type(even) {
-            padding-left: unset;
-        }
-
-        .work-sample:nth-of-type(odd) {
-            padding-right: unset;
-        }
 }
 
 /* landscape */
@@ -59,5 +48,11 @@
     
     .hero-text-primary {
         font-size: 1.65rem;
+    }
+
+    /* my work section */
+    /* work sample styles */
+    .work-sample {
+        width: 48%;
     }
 }
