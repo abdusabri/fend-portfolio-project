@@ -155,30 +155,19 @@ responsivenes
 .my-work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* work sample styles */
 .work-sample {
-    width: calc((100% - 3rem)/4);
-    margin: 0.5rem;
+    width: 24%;
+    margin: 0.5rem 0;
 }
 
 img {
     width: 100%;
     border: rgba(0, 0, 0, 0.25) solid 1px;
     border-radius: 0.5rem;
-}
-
-/* 
-Remove margins from the left and right of the first and
-last samples to align with edges of the main content area
-*/
-.work-sample:first-of-type {
-    margin-left: 0;
-}
-
-.work-sample:last-of-type {
-    margin-right: 0;
 }
 
 .project-title {
@@ -226,20 +215,7 @@ footer a {
 
     /* work sample styles */
     .work-sample {
-        width: 50%;
-        margin: unset;
-    }
-
-    /* 
-    add padding to the left and right of projects to 
-    create a gap in between
-    */
-    .work-sample:nth-of-type(even) {
-        padding-left: 0.75rem;
-    }
-
-    .work-sample:nth-of-type(odd) {
-        padding-right: 0.75rem;
+        width: 49%;
     }
 }
 
@@ -259,6 +235,14 @@ footer a {
         font-size: 1.65rem;
     }
 
+    /* my work section */
+    /* work sample styles */
+    .work-sample {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
     /* about section */
     /* 
     avoid justifying the last paragraph to avoid
@@ -266,22 +250,5 @@ footer a {
     */
     .about p:last-of-type {
         text-align: unset;
-    }
-
-    /* my work section */
-    /* work sample styles */
-    .work-sample {
-        width: 100%;
-    }
-
-    /* 
-    remove extra padding to the left and right of projects
-    */
-    .work-sample:nth-of-type(even) {
-        padding-left: unset;
-    }
-
-    .work-sample:nth-of-type(odd) {
-        padding-right: unset;
     }
 }
