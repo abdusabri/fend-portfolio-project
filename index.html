@@ -32,16 +32,21 @@
     <!-- the header area of the website, which has the logo and navigation -->
     <header class="header" role="banner">
         <!-- website logo -->
-        <a href="#main"><img src="img/logo-main-140.png" alt="" class="logo"></a>
+        <a href="#main"><img src="img/logo-main-140.png" alt="Website logo, 'abdusabri' is rednered in 2 colors, 'abdu' in purple and 'sabri' in grey" 
+            class="logo" title="Scroll to the top of the website"></a>
         <nav class="nav" role="navigation">
-            <a href="#about" class="nav-item">About</a>
-            <a href="#my-work" class="nav-item">My&nbsp;Work</a>
+            <a href="#about" class="nav-item" title="Scroll to the 'About' section of the website">About</a>
+            <a href="#my-work" class="nav-item" title="Scroll to the 'My Work' section of the website">My&nbsp;Work</a>
         </nav>
     </header>
 
     <!-- the main content area of the website -->
     <main id="main" role="main">
         <section class="hero">
+            <!-- Not the best approach, but since the hero image is implemented as a background  
+                 I wanted to have a way for screen readers to describe the hero image
+            -->
+            <span role="img" aria-label="A hand-drawn wireframe with place holders for images, some text, and videos, which is used as a hero image for the website"></span>
             <header class="hero-text">
                 <h1 class="hero-text-primary">Abdulrahman Assabri</h1>
                 <em class="hero-text-secondary">a.k.a Abdusabri</em>
@@ -57,7 +62,7 @@
                 <p>I've 11 years of experience in software and integrated solutions, and privileged to have success in a variety of management/leadership, business, and technical roles.</p>
                 <p>I’ve experience working at startups, with leading multinational organizations, and with customers, partners, colleagues, and freelancers from 50+ countries.</p>
                 <p>I started my career back in 2007 as a software developer, promoted multiple times until i became a team lead. Then switched to business and management roles. Now i want to brush up my skills and get back to being a full-time developer again!</p>
-                <p>You can reach me at <a href="mailto:abdusabri@outlook.com">abdusabri@outlook.com</a></p>
+                <p>You can reach me at <a href="mailto:abdusabri@outlook.com" title="Send an email to Abdulrahman at abdusabri@outlook.com">abdusabri@outlook.com</a></p>
             </article>
             <article class="my-work" role="article">
                 <header>
@@ -74,7 +79,7 @@
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/my-website-540.png">
                             <img src="img/my-website-360.png" alt="Personal website showing the header, a hero section, and some text as welcome notes">
                         </picture>
-                        <figcaption class="project-title"><a href="https://abdusabri.com">My Existing Website</a></figcaption>
+                        <figcaption class="project-title"><a href="https://abdusabri.com" title="Go to Abdulrahman's personal website">My Existing Website</a></figcaption>
                     </figure>
                     <p class="project-description">This is my existing website, where I provide samples of my work - mainly as a product manager -. It has a link to my LinkedIn profile and a contact me form. It is built using WordPress.</p>
                 </div>
@@ -87,7 +92,7 @@
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/matching-wide-540.png">
                             <img src="img/matching-wide-360.png" alt="A memory matching game with 4 columns and 4 rows">
                         </picture>
-                        <figcaption class="project-title"><a href="#proj-memory">The Memory Game</a></figcaption>
+                        <figcaption class="project-title"><a href="#proj-memory" title="Scroll to the memory game porject">The Memory Game</a></figcaption>
                     </figure>
                     <p class="project-description">The Memory Game is a complete browser-based card matching game (also known as Concentration). But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game! It is built using HTML, CSS, and JavaScript.</p>
                 </div>
@@ -100,7 +105,7 @@
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/restaurant-reviews-540.png">
                             <img src="img/restaurant-reviews-360.png" alt="Map with locations of restaurants highlighted, and a side panel with reviews">
                         </picture>
-                        <figcaption class="project-title"><a href="#proj-restaurant">Restaurant Reviews App</a></figcaption>
+                        <figcaption class="project-title"><a href="#proj-restaurant" title="Scroll to restaurant reviews app porject">Restaurant Reviews App</a></figcaption>
                     </figure>
                     <p class="project-description">In this porject, I'll convert a static webpage to a mobile-ready web application. Where I'll will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. I will also begin converting this to a Progressive Web Application by caching some assets for offline use.</p>
                 </div>
@@ -113,7 +118,7 @@
                             <source media="(min-width: 890px) and (max-width: 1024px)" srcset="img/neighborhood-map-540.png">
                             <img src="img/neighborhood-map-360.png" alt="Map with highlighted locations, and a side panel with search and filter capabilities">
                         </picture>
-                        <figcaption class="project-title"><a href="#proj-neighborhood">Neighborhood Map</a></figcaption>
+                        <figcaption class="project-title"><a href="#proj-neighborhood" title="Scroll to the neighborhood map porject">Neighborhood Map</a></figcaption>
                     </figure>
                     <p class="project-description">This is a single page application featuring a neighborhood map. It has interactive map functionalities including highlighted locations, third-party data about those locations, and various ways to browse the content.</p>
                 </div>
