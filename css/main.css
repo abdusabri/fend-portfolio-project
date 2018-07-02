@@ -61,6 +61,7 @@ the header is fixed at the top of the page
     position: fixed;
     top: 0;
     padding: 0.5rem 0 0.5rem 1.5rem;
+    background-color: rgb(169, 193, 214);
     background-color: rgba(169, 193, 214, 0.85);
 }
 
