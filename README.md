@@ -8,11 +8,17 @@ This is the first project as part of my Front-End Web Development Nanodegree. It
 
 Following are some notes and things that could be improved:
 
-- There would be some compatibility issues with older versions of IE due to the use of rgba colors in CSS without a fallback hex or rgb
+- ~~There would be some compatibility issues with older versions of IE due to the use of rgba colors in CSS without a fallback hex or rgb~~ (Added fallback colors for rgba, as there was some issues when testing with actual android devices)
 
 - More optimized image sizes/sources for the hero section
 
 - More optimized image sizes/sources for tablets (hero and project pictures)
+
+- A bigger logo size and source image for tablets
+
+- Consider bigger icons in footer for mobiles and tablets
+
+- Consider listing only the used tags instead of "*" universal selector for the CSS rule about box sizing
 
 ## References and Credits
 
