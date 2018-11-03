@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This is the first project as part of my Front-End Web Development Nanodegree. It is a portfolio website. To practice HTML and CSS, I didn't use bootstrap or any other framework. I started from scratch and used flex boxes and media queries to achieve responsiveness. The website changes the layout from 4 columns, to 2 columns, and to 1 column as the screen size gets smaller. The website is fully responsive and has optimized media queries for mobile (portrait and landscape) and iPad (portrait and landscape). I've tested the website on IE 11, Edge, Chrome, and Firefox. I've also paid attention to accessibility best practices.
+This is the first project as part of my Front-End Web Development Nanodegree. It is a portfolio website. To practice HTML and CSS, I didn't use bootstrap or any other framework. I started from scratch and used flex boxes and media queries to achieve responsiveness. The website changes the layout from 4 columns, to 2 columns, and to 1 column as the screen size gets smaller. The website is fully responsive and has optimized media queries for mobile (portrait and landscape) and iPad (portrait and landscape). I've tested the website on IE 11, Edge, Chrome, and Firefox. I've also paid attention to accessibility best practices. You can visit the website [here](https://abdusabri.github.io/fend-portfolio-project/).
 
 ## Things to Improve
 
